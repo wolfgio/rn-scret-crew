@@ -3,6 +3,7 @@ import { Platform, StatusBar, StyleSheet, View } from 'react-native';
 import { Provider } from 'react-redux';
 import { AppLoading, Asset, Font } from 'expo';
 import { Ionicons } from '@expo/vector-icons';
+import PropTypes from 'prop-types';
 
 import RootNavigation from './navigation/RootNavigation';
 import store from './redux/store';
@@ -18,7 +19,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default class App extends React.Component {
+class App extends React.Component {
   state = {
     isLoadingComplete: false,
   };
@@ -71,3 +72,13 @@ export default class App extends React.Component {
     );
   }
 }
+
+App.propTypes = {
+  skipLoadingScreen: PropTypes.bool,
+};
+
+App.defaultProps = {
+  skipLoadingScreen: false,
+};
+
+export default App;
