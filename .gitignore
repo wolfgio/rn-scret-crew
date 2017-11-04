@@ -62,3 +62,6 @@ typings/
 .env
 
 >>>>>>> 65de1ab3b2b5fe5f4d2c2f2a195ff0b920a48dee
+.expo/
+
+.idea/
