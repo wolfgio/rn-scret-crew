@@ -9,6 +9,7 @@ import {
   View,
 } from 'react-native';
 import { WebBrowser } from 'expo';
+import { Button } from 'antd-mobile';
 
 import { MonoText } from '../components/StyledText';
 
@@ -44,6 +45,11 @@ export default class HomeScreen extends React.Component {
             <Text style={styles.getStartedText}>
               Change this text and your app will automatically reload.
             </Text>
+            <Button
+              type="primary"
+            >
+              This is a antd primary button
+            </Button>
           </View>
 
           <View style={styles.helpContainer}>
